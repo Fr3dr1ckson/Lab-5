@@ -1,0 +1,78 @@
+body {
+    background-color: #EAF6FF;
+}
+
+.chat button{
+    height: 40px;
+    border: 0 solid;
+    border-radius: 7px;
+    width: 50%;
+    margin-top: 10px;
+    background-color: #fee528;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#chatWindow {
+    background-color: white;
+    margin-top: 40px;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+#user1ChatBlock,
+#user2ChatBlock {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.user1Message, .user2Message {
+    text-align: left;
+    width: 50%;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+.user1Message {
+    float: left;
+    width: 55%;
+    background-color: #d9f9d9;
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.user2Message {
+    float: right;
+    align-items: flex-end;
+    width: 55%;
+    background-color: #d9d9f9;
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 4px;
+}
+.user2Message h5{
+    text-align:right;
+}
+
+h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+@media (max-width: 991px) {
+    h4 {
+        text-align: justify;
+    }
+    button {
+        font-size-adjust: inherit;
+        text-align: justify;
+    }
+}
