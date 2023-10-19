@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/chat-page.css">
+</head>
+<body>
+<header>
+    <a href="../index.html"><-Back</a>
+</header>
+<main>
+    <div class="container chat">
+        <div class="row">
+            <div class="col-md-3">
+                <div id="user1ChatBlock">
+                    <h4>Повідомлення user1</h4>
+                    <input type="text" id="user1Input" class="form-control" placeholder="Введіть текст">
+                    <button onclick="submitMessage('user1')">Відправити</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="chat-window" id="chatWindow"></div>
+            </div>
+            <div class="col-md-3">
+                <div id="user2ChatBlock">
+                    <h4>Повідомлення user2</h4>
+                    <input type="text" id="user2Input" class="form-control" placeholder="Введіть текст">
+                    <button onclick="submitMessage('user2')">Відправити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src = ../js/chatScript.js></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
