@@ -11,18 +11,45 @@
     <a href="pages/translator.html">Translator</a>
 </footer>
 <main>
-    <h1>Зовнішній вигляд веб-сторінки</h1>
-    <p>Довжина <label>
-        <input type="number" id="length" min="0" oninput="calculate()">
-    </label></p>
-    <p id="errorLengthMessage"></p>
-    <p>Ширина <label>
-        <input type="number" id="width" min="0" oninput="calculate()">
-    </label></p>
-    <p id="errorWidthMessage"></p>
-    <p>Площа <span id="areaOutput"></span></p>
-    <p>Периметр <span id="perimeterOutput"></span></p>
-    <p>Діагональ <span id="diagonalOutput"></span></p>
+    <div>
+        <h1>Це найкраще що я, Костянтин Ісаєв, зробив у своєму житті</h1>
+        <label>
+            Довжина
+            <input type="number" id="length" min="0" oninput="calculate()">
+        </label>
+        <p id="errorLengthMassage"></p>
+        <label>
+            Ширина
+            <input type="number" id="width" min="0" oninput="calculate()">
+        </label>
+        <p id="errorWidthMassage"></p>
+
+        <p>Площа: <span id="areaOutput"></span></p>
+        <p>Периметр: <span id="perimeterOutput"></span></p>
+        <p>Діагональ: <span id="diagonalOutput"></span></p>
+    </div>
+
+    <hr>
+
+    <div>
+        <label>
+            Рік
+            <input type="number" id="year" min="1999" max="2023" oninput="calcDayOfWeek()">
+        </label>
+        <p id="errorYearMassage"></p>
+        <label>
+            Місяць
+            <input type="number" id="month" min="1" max="12" oninput="calcDayOfWeek()">
+        </label>
+        <p id="errorMonthMassage"></p>
+        <label>
+            День
+            <input type="number" id="day" min="1" max="31" oninput="calcDayOfWeek()">
+        </label>
+        <p id="errorDayMassage"></p>
+
+        <p>День тижня: <b><span id="dayOfWeek"></span></b></p>
+    </div>
 
     <script src="js/script.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
